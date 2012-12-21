@@ -32,6 +32,11 @@ c.foo = 30
 c.foo # => 30
 ```
 
+## difference from Struct
+
+- `hash` is not defined yet, `Object#hash` used
+- `values_at` method doesn't raise IndexError yet
+
 ## Contributing
 
 1. Fork it
