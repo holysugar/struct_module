@@ -1,6 +1,6 @@
 # StructModule
 
-TODO: Write a gem description
+like Struct, but module
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+requrie 'struct_module'
+
+class C
+  include StructModule(:foo, :bar)
+end
+
+c = C.new(1, 2)
+c.foo # => 1
+c.bar # => 2
+c.foo = 30
+c.foo # => 30
+```
 
 ## Contributing
 
